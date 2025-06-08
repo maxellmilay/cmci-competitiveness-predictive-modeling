@@ -185,4 +185,4 @@ if __name__ == "__main__":
     # Example usage
     pipeline = CMCIPipeline()
     results = pipeline.run_full_pipeline()
-    print("Pipeline completed successfully!") 
+    print("Pipeline completed successfully!")

@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A["Raw CMCI Data"] --> B["Data Ingestion<br/>(src/data/ingestion.py)"]
     B --> C["Data Cleaning<br/>(src/data/cleaning.py)"]
@@ -31,3 +32,4 @@ graph TD
     P -.-> D
     P -.-> G
     P -.-> H
+```
