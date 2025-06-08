@@ -1,0 +1,37 @@
+data:
+  raw_data_path: "data/raw/"
+  processed_data_path: "data/processed/"
+  features_path: "data/features/"
+  
+preprocessing:
+  missing_value_strategy: "mean"
+  outlier_detection: true
+  normalization: "standard_scaler"
+  
+feature_engineering:
+  pca_components: 10
+  feature_selection_method: "recursive_feature_elimination"
+  
+model_training:
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+  gradient_boost:
+    learning_rate: 0.1
+    n_estimators: 100
+    max_depth: 6
+    
+validation:
+  test_size: 0.2
+  cv_folds: 5
+  stratify: true
+  
+logging:
+  level: "INFO"
+  log_dir: "logs/"
+  
+artifacts:
+  model_dir: "models/artifacts/"
+  metrics_dir: "metrics/"
+  plots_dir: "plots/" 
