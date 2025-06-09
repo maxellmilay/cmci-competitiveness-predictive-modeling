@@ -56,7 +56,7 @@ run-prefect:
 
 # MLflow UI
 mlflow-ui:
-	mlflow ui --host 0.0.0.0 --port 5000
+	mlflow ui --host 0.0.0.0 --port 8080
 
 # Jupyter
 jupyter:
